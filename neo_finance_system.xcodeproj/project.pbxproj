@@ -7,23 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5BC6DD45C00009D8DC4E9710 /* Pods_neo_finance_system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C642D1C1D73474E338615FC /* Pods_neo_finance_system.framework */; };
+		B4151D1228EC3D5300A30FA4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D1128EC3D5300A30FA4 /* MainVC.swift */; };
+		B4151D1428EC3F9700A30FA4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D1328EC3F9700A30FA4 /* LoginViewModel.swift */; };
+		B4151D1828EC444700A30FA4 /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D1728EC444700A30FA4 /* VC.swift */; };
+		B4151D1B28EC472D00A30FA4 /* VCtype.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D1A28EC472D00A30FA4 /* VCtype.swift */; };
+		B4151D1D28EC47A600A30FA4 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D1C28EC47A600A30FA4 /* SettingsVC.swift */; };
+		B4151D1F28EC47B500A30FA4 /* AddNewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D1E28EC47B500A30FA4 /* AddNewVC.swift */; };
+		B4151D2128EC47C300A30FA4 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2028EC47C300A30FA4 /* UsersVC.swift */; };
+		B4151D2328EC47D300A30FA4 /* AnalyticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */; };
+		B4151D2528EC49A100A30FA4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2428EC49A100A30FA4 /* MainTabBarController.swift */; };
 		B4AF7C2828EC1DE2008B8CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF7C2728EC1DE2008B8CA4 /* AppDelegate.swift */; };
 		B4AF7C2A28EC1DE2008B8CA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF7C2928EC1DE2008B8CA4 /* SceneDelegate.swift */; };
-		B4AF7C2C28EC1DE2008B8CA4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF7C2B28EC1DE2008B8CA4 /* ViewController.swift */; };
-		B4AF7C2F28EC1DE2008B8CA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AF7C2D28EC1DE2008B8CA4 /* Main.storyboard */; };
 		B4AF7C3128EC1DE6008B8CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AF7C3028EC1DE6008B8CA4 /* Assets.xcassets */; };
 		B4AF7C3428EC1DE6008B8CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AF7C3228EC1DE6008B8CA4 /* LaunchScreen.storyboard */; };
+		B4AF7C3D28EC21EC008B8CA4 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF7C3C28EC21EC008B8CA4 /* BaseVC.swift */; };
+		B4AF7C3F28EC27E9008B8CA4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF7C3E28EC27E9008B8CA4 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C642D1C1D73474E338615FC /* Pods_neo_finance_system.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_neo_finance_system.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		14425E8619E2B5E3A95E9FD3 /* Pods-neo_finance_system.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neo_finance_system.release.xcconfig"; path = "Target Support Files/Pods-neo_finance_system/Pods-neo_finance_system.release.xcconfig"; sourceTree = "<group>"; };
+		8F362B2BB4F36125951CF13A /* Pods-neo_finance_system.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neo_finance_system.debug.xcconfig"; path = "Target Support Files/Pods-neo_finance_system/Pods-neo_finance_system.debug.xcconfig"; sourceTree = "<group>"; };
+		B4151D1128EC3D5300A30FA4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		B4151D1328EC3F9700A30FA4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B4151D1728EC444700A30FA4 /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
+		B4151D1A28EC472D00A30FA4 /* VCtype.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VCtype.swift; sourceTree = "<group>"; };
+		B4151D1C28EC47A600A30FA4 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		B4151D1E28EC47B500A30FA4 /* AddNewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewVC.swift; sourceTree = "<group>"; };
+		B4151D2028EC47C300A30FA4 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
+		B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsVC.swift; sourceTree = "<group>"; };
+		B4151D2428EC49A100A30FA4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		B4AF7C2428EC1DE2008B8CA4 /* neo_finance_system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neo_finance_system.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AF7C2728EC1DE2008B8CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4AF7C2928EC1DE2008B8CA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4AF7C2B28EC1DE2008B8CA4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		B4AF7C2E28EC1DE2008B8CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4AF7C3028EC1DE6008B8CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4AF7C3328EC1DE6008B8CA4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4AF7C3528EC1DE6008B8CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4AF7C3C28EC21EC008B8CA4 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
+		B4AF7C3E28EC27E9008B8CA4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +53,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC6DD45C00009D8DC4E9710 /* Pods_neo_finance_system.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B4151D1528EC410800A30FA4 /* Login part */ = {
+			isa = PBXGroup;
+			children = (
+				B4151D1328EC3F9700A30FA4 /* LoginViewModel.swift */,
+				B4AF7C3E28EC27E9008B8CA4 /* LoginVC.swift */,
+			);
+			path = "Login part";
+			sourceTree = "<group>";
+		};
+		B4151D1628EC442A00A30FA4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4151D1728EC444700A30FA4 /* VC.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B4151D1928EC471A00A30FA4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B4151D1A28EC472D00A30FA4 /* VCtype.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		B4AF7C1B28EC1DE2008B8CA4 = {
 			isa = PBXGroup;
 			children = (
 				B4AF7C2628EC1DE2008B8CA4 /* neo_finance_system */,
 				B4AF7C2528EC1DE2008B8CA4 /* Products */,
+				FA9FEF57B3D21DF3B3AD7B51 /* Pods */,
+				F7A41109B1A8500C16231EC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +106,48 @@
 		B4AF7C2628EC1DE2008B8CA4 /* neo_finance_system */ = {
 			isa = PBXGroup;
 			children = (
-				B4AF7C2728EC1DE2008B8CA4 /* AppDelegate.swift */,
+				B4AF7C3B28EC1E5D008B8CA4 /* Resources */,
 				B4AF7C2928EC1DE2008B8CA4 /* SceneDelegate.swift */,
-				B4AF7C2B28EC1DE2008B8CA4 /* ViewController.swift */,
-				B4AF7C2D28EC1DE2008B8CA4 /* Main.storyboard */,
-				B4AF7C3028EC1DE6008B8CA4 /* Assets.xcassets */,
 				B4AF7C3228EC1DE6008B8CA4 /* LaunchScreen.storyboard */,
 				B4AF7C3528EC1DE6008B8CA4 /* Info.plist */,
+				B4AF7C3C28EC21EC008B8CA4 /* BaseVC.swift */,
+				B4151D1628EC442A00A30FA4 /* Extensions */,
+				B4151D1528EC410800A30FA4 /* Login part */,
+				B4151D1128EC3D5300A30FA4 /* MainVC.swift */,
+				B4151D1C28EC47A600A30FA4 /* SettingsVC.swift */,
+				B4151D1E28EC47B500A30FA4 /* AddNewVC.swift */,
+				B4151D2028EC47C300A30FA4 /* UsersVC.swift */,
+				B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */,
+				B4151D2428EC49A100A30FA4 /* MainTabBarController.swift */,
+				B4151D1928EC471A00A30FA4 /* Utilities */,
 			);
 			path = neo_finance_system;
+			sourceTree = "<group>";
+		};
+		B4AF7C3B28EC1E5D008B8CA4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B4AF7C3028EC1DE6008B8CA4 /* Assets.xcassets */,
+				B4AF7C2728EC1DE2008B8CA4 /* AppDelegate.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7A41109B1A8500C16231EC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C642D1C1D73474E338615FC /* Pods_neo_finance_system.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA9FEF57B3D21DF3B3AD7B51 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F362B2BB4F36125951CF13A /* Pods-neo_finance_system.debug.xcconfig */,
+				14425E8619E2B5E3A95E9FD3 /* Pods-neo_finance_system.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +157,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4AF7C3828EC1DE6008B8CA4 /* Build configuration list for PBXNativeTarget "neo_finance_system" */;
 			buildPhases = (
+				7A908D3CC4C9C57EE69F1F9A /* [CP] Check Pods Manifest.lock */,
 				B4AF7C2028EC1DE2008B8CA4 /* Sources */,
 				B4AF7C2128EC1DE2008B8CA4 /* Frameworks */,
 				B4AF7C2228EC1DE2008B8CA4 /* Resources */,
+				C05F6C35D99894D171EBA69F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +212,77 @@
 			files = (
 				B4AF7C3428EC1DE6008B8CA4 /* LaunchScreen.storyboard in Resources */,
 				B4AF7C3128EC1DE6008B8CA4 /* Assets.xcassets in Resources */,
-				B4AF7C2F28EC1DE2008B8CA4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7A908D3CC4C9C57EE69F1F9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-neo_finance_system-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C05F6C35D99894D171EBA69F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-neo_finance_system/Pods-neo_finance_system-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-neo_finance_system/Pods-neo_finance_system-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-neo_finance_system/Pods-neo_finance_system-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B4AF7C2028EC1DE2008B8CA4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4AF7C2C28EC1DE2008B8CA4 /* ViewController.swift in Sources */,
+				B4151D1228EC3D5300A30FA4 /* MainVC.swift in Sources */,
 				B4AF7C2828EC1DE2008B8CA4 /* AppDelegate.swift in Sources */,
+				B4151D1B28EC472D00A30FA4 /* VCtype.swift in Sources */,
+				B4151D1428EC3F9700A30FA4 /* LoginViewModel.swift in Sources */,
+				B4151D1F28EC47B500A30FA4 /* AddNewVC.swift in Sources */,
 				B4AF7C2A28EC1DE2008B8CA4 /* SceneDelegate.swift in Sources */,
+				B4AF7C3D28EC21EC008B8CA4 /* BaseVC.swift in Sources */,
+				B4151D2528EC49A100A30FA4 /* MainTabBarController.swift in Sources */,
+				B4AF7C3F28EC27E9008B8CA4 /* LoginVC.swift in Sources */,
+				B4151D2128EC47C300A30FA4 /* UsersVC.swift in Sources */,
+				B4151D2328EC47D300A30FA4 /* AnalyticsVC.swift in Sources */,
+				B4151D1828EC444700A30FA4 /* VC.swift in Sources */,
+				B4151D1D28EC47A600A30FA4 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		B4AF7C2D28EC1DE2008B8CA4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B4AF7C2E28EC1DE2008B8CA4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		B4AF7C3228EC1DE6008B8CA4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +398,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -282,6 +410,7 @@
 		};
 		B4AF7C3928EC1DE6008B8CA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F362B2BB4F36125951CF13A /* Pods-neo_finance_system.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -291,9 +420,10 @@
 				INFOPLIST_FILE = neo_finance_system/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -303,12 +433,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		B4AF7C3A28EC1DE6008B8CA4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14425E8619E2B5E3A95E9FD3 /* Pods-neo_finance_system.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -318,9 +449,10 @@
 				INFOPLIST_FILE = neo_finance_system/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,7 +462,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

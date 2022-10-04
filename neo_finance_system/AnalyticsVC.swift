@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import SnapKit
+
+class AnalyticsVC: BaseVC{
+
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .brown
+    }
+    
+    
+    
+}

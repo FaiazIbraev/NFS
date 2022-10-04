@@ -5,4 +5,10 @@
 //  Created by Faiaz Ibraev on 4/10/22.
 //
 
-import Foundation
+import UIKit
+
+extension UIViewController{
+    var appDelegate: AppDelegate{
+        UIApplication.shared.delegate as! AppDelegate
+    }
+}

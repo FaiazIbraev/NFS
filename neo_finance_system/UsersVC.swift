@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import SnapKit
+
+class UsersVC: BaseVC{
+
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .gray
+    }
+    
+    
+    
+}

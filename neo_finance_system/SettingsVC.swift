@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import SnapKit
+
+class SettingsVC: BaseVC{
+
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        view.backgroundColor = .yellow
+    }
+    
+    
+    
+}

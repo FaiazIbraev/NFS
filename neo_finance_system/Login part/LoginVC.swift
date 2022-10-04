@@ -10,6 +10,8 @@ import SnapKit
 
 class LoginVC: BaseVC{
     
+    var viewModel = LoginViewModel()
+    
     private lazy var mainImage: UIImageView = {
         let image = UIImageView()
         image.image = UIImage(named: "logo")
@@ -176,6 +178,16 @@ class LoginVC: BaseVC{
     
     override func setupValues() {
         super.setupValues()
+        viewModel.isUserAuthorized = {
+            (isAuthorized) in
+            if isAuthorized{
+                self.appDelegate.mainApp()
+            }else{
+                self.forgotPassLabel.text = "Неправильные данные"
+            }
+        }
+        
+        
     }
     
 }
@@ -186,7 +198,10 @@ extension LoginVC{
     }
     
     @objc func loginTapped(){
-        
+        guard let login = mailTextField.text, let password = passTextField.text else {return}
+        if !login.isEmpty && !password.isEmpty{
+            viewModel.authorizeUser(login: login, password: password)
+        }
     }
     
 }
