@@ -17,7 +17,7 @@ class MainTabBarController: UITabBarController{
     
     func setupTabBarAppereance(){
         self.tabBar.isTranslucent = true
-        self.tabBar.backgroundColor = .lightGray
+        self.tabBar.backgroundColor = .white
     }
     
     func setupVC(){
@@ -27,6 +27,8 @@ class MainTabBarController: UITabBarController{
     func setupCurrentVC(_ viewControllerType: VCtype) -> UIViewController{
         let vc = viewControllerType.VC
         vc.tabBarItem.title = viewControllerType.title
+        vc.tabBarItem.image = viewControllerType.unselectedIcon
+        vc.tabBarItem.selectedImage = viewControllerType.selectedIcon
         
         return vc
     }

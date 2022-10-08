@@ -17,12 +17,18 @@
 		B4151D2128EC47C300A30FA4 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2028EC47C300A30FA4 /* UsersVC.swift */; };
 		B4151D2328EC47D300A30FA4 /* AnalyticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */; };
 		B4151D2528EC49A100A30FA4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2428EC49A100A30FA4 /* MainTabBarController.swift */; };
+		B4A4B5C028F16DDE009C1842 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4B5BF28F16DDE009C1842 /* CustomButton.swift */; };
+		B4A4B5C228F16DEE009C1842 /* CustomButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4B5C128F16DEE009C1842 /* CustomButtonType.swift */; };
 		B4AF7C2828EC1DE2008B8CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF7C2728EC1DE2008B8CA4 /* AppDelegate.swift */; };
 		B4AF7C2A28EC1DE2008B8CA4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF7C2928EC1DE2008B8CA4 /* SceneDelegate.swift */; };
 		B4AF7C3128EC1DE6008B8CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4AF7C3028EC1DE6008B8CA4 /* Assets.xcassets */; };
 		B4AF7C3428EC1DE6008B8CA4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4AF7C3228EC1DE6008B8CA4 /* LaunchScreen.storyboard */; };
 		B4AF7C3D28EC21EC008B8CA4 /* BaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF7C3C28EC21EC008B8CA4 /* BaseVC.swift */; };
 		B4AF7C3F28EC27E9008B8CA4 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF7C3E28EC27E9008B8CA4 /* LoginVC.swift */; };
+		B4CE67BD28F14F3700003E98 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE67BC28F14F3700003E98 /* CustomLabel.swift */; };
+		B4CE67BF28F1517D00003E98 /* LabelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE67BE28F1517D00003E98 /* LabelType.swift */; };
+		B4CE67C328F1678100003E98 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE67C228F1678100003E98 /* CustomTF.swift */; };
+		B4CE67C528F1679200003E98 /* TextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE67C428F1679200003E98 /* TextFieldType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +44,8 @@
 		B4151D2028EC47C300A30FA4 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsVC.swift; sourceTree = "<group>"; };
 		B4151D2428EC49A100A30FA4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B4A4B5BF28F16DDE009C1842 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		B4A4B5C128F16DEE009C1842 /* CustomButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonType.swift; sourceTree = "<group>"; };
 		B4AF7C2428EC1DE2008B8CA4 /* neo_finance_system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neo_finance_system.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4AF7C2728EC1DE2008B8CA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4AF7C2928EC1DE2008B8CA4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +54,10 @@
 		B4AF7C3528EC1DE6008B8CA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B4AF7C3C28EC21EC008B8CA4 /* BaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVC.swift; sourceTree = "<group>"; };
 		B4AF7C3E28EC27E9008B8CA4 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		B4CE67BC28F14F3700003E98 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		B4CE67BE28F1517D00003E98 /* LabelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelType.swift; sourceTree = "<group>"; };
+		B4CE67C228F1678100003E98 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
+		B4CE67C428F1679200003E98 /* TextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +123,7 @@
 				B4AF7C3228EC1DE6008B8CA4 /* LaunchScreen.storyboard */,
 				B4AF7C3528EC1DE6008B8CA4 /* Info.plist */,
 				B4AF7C3C28EC21EC008B8CA4 /* BaseVC.swift */,
+				B4CE67BB28F14F0B00003E98 /* Custom views */,
 				B4151D1628EC442A00A30FA4 /* Extensions */,
 				B4151D1528EC410800A30FA4 /* Login part */,
 				B4151D1128EC3D5300A30FA4 /* MainVC.swift */,
@@ -131,6 +144,43 @@
 				B4AF7C2728EC1DE2008B8CA4 /* AppDelegate.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B4CE67BB28F14F0B00003E98 /* Custom views */ = {
+			isa = PBXGroup;
+			children = (
+				B4CE67C628F16D5F00003E98 /* Button */,
+				B4CE67C128F1677100003E98 /* TextField */,
+				B4CE67C028F1675400003E98 /* Label */,
+			);
+			path = "Custom views";
+			sourceTree = "<group>";
+		};
+		B4CE67C028F1675400003E98 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				B4CE67BC28F14F3700003E98 /* CustomLabel.swift */,
+				B4CE67BE28F1517D00003E98 /* LabelType.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		B4CE67C128F1677100003E98 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				B4CE67C228F1678100003E98 /* CustomTF.swift */,
+				B4CE67C428F1679200003E98 /* TextFieldType.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		B4CE67C628F16D5F00003E98 /* Button */ = {
+			isa = PBXGroup;
+			children = (
+				B4A4B5BF28F16DDE009C1842 /* CustomButton.swift */,
+				B4A4B5C128F16DEE009C1842 /* CustomButtonType.swift */,
+			);
+			path = Button;
 			sourceTree = "<group>";
 		};
 		F7A41109B1A8500C16231EC0 /* Frameworks */ = {
@@ -264,18 +314,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4CE67C528F1679200003E98 /* TextFieldType.swift in Sources */,
 				B4151D1228EC3D5300A30FA4 /* MainVC.swift in Sources */,
+				B4A4B5C028F16DDE009C1842 /* CustomButton.swift in Sources */,
 				B4AF7C2828EC1DE2008B8CA4 /* AppDelegate.swift in Sources */,
 				B4151D1B28EC472D00A30FA4 /* VCtype.swift in Sources */,
 				B4151D1428EC3F9700A30FA4 /* LoginViewModel.swift in Sources */,
 				B4151D1F28EC47B500A30FA4 /* AddNewVC.swift in Sources */,
 				B4AF7C2A28EC1DE2008B8CA4 /* SceneDelegate.swift in Sources */,
+				B4CE67BF28F1517D00003E98 /* LabelType.swift in Sources */,
 				B4AF7C3D28EC21EC008B8CA4 /* BaseVC.swift in Sources */,
 				B4151D2528EC49A100A30FA4 /* MainTabBarController.swift in Sources */,
 				B4AF7C3F28EC27E9008B8CA4 /* LoginVC.swift in Sources */,
+				B4CE67BD28F14F3700003E98 /* CustomLabel.swift in Sources */,
 				B4151D2128EC47C300A30FA4 /* UsersVC.swift in Sources */,
 				B4151D2328EC47D300A30FA4 /* AnalyticsVC.swift in Sources */,
 				B4151D1828EC444700A30FA4 /* VC.swift in Sources */,
+				B4A4B5C228F16DEE009C1842 /* CustomButtonType.swift in Sources */,
+				B4CE67C328F1678100003E98 /* CustomTF.swift in Sources */,
 				B4151D1D28EC47A600A30FA4 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
