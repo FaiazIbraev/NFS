@@ -81,4 +81,33 @@ extension LabelType{
         }
     }
     
+    var numberOfLines: Int{
+        switch self {
+        case .mainLabel:
+            return 0
+        case .balanceNameLabel:
+            return 0
+        case .balanceAmountLabel:
+            return 0
+        case .organizationLabel:
+            return 0
+        case .bankLabel:
+            return 0
+        case .dateLabel:
+            return 0
+        case .newRecordLabel:
+            return 0
+        case .recordNameLabel:
+            return 0
+        case .settingsLabel:
+            return 0
+        case .settingsAddLabel:
+            return 0
+        case .rejectLabel:
+            return 0
+        case .recordAmount:
+            return 0
+        }
+    }
+    
 }

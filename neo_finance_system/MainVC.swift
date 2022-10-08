@@ -31,6 +31,7 @@ class MainVC: BaseVC{
         let label = CustomLabel(type: .balanceNameLabel)
         label.text = "Доход"
         label.textAlignment = .center
+ 
         return label
     }()
     
@@ -38,6 +39,7 @@ class MainVC: BaseVC{
         let label = CustomLabel(type: .balanceNameLabel)
         label.text = "Расход"
         label.textAlignment = .center
+
         return label
     }()
     
@@ -45,6 +47,7 @@ class MainVC: BaseVC{
         let label = CustomLabel(type: .balanceNameLabel)
         label.text = "Баланс"
         label.textAlignment = .center
+
         return label
     }()
     

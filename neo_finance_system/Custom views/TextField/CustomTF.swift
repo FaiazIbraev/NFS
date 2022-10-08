@@ -24,6 +24,7 @@ class CustomTF: UITextField{
     func setup(){
         self.font = type.textFont
         self.textColor = type.textColor
+        self.placeholder = type.placeholder
     }
     
 }

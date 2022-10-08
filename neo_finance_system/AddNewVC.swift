@@ -78,7 +78,7 @@ class AddNewVC: BaseVC{
         
         mainStack.snp.makeConstraints { make in
             make.top.equalTo(newRecLabel.snp.bottom).offset(17.5)
-            make.centerX.equalToSuperview()
+            make.leading.trailing.equalToSuperview().inset(16.5)
             make.height.equalTo(32)
         }
         

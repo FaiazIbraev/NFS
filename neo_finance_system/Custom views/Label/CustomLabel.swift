@@ -23,6 +23,7 @@ class CustomLabel: UILabel{
     func setup(){
         self.textColor = type.textColor
         self.font = type.textFont
+        self.numberOfLines = type.numberOfLines
     }
     
 }

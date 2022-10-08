@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController{
+class MainTabBarController: UITabBarController, UITabBarControllerDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,6 +18,7 @@ class MainTabBarController: UITabBarController{
     func setupTabBarAppereance(){
         self.tabBar.isTranslucent = true
         self.tabBar.backgroundColor = .white
+        self.delegate = self
     }
     
     func setupVC(){
@@ -33,4 +34,13 @@ class MainTabBarController: UITabBarController{
         return vc
     }
     
+    
+    func tabBarController(_ tabBarController: UITabBarController, shouldSelect viewController: UIViewController) -> Bool {
+        let index = tabBarController.viewControllers?.firstIndex(of: viewController)
+        if index == 2{
+            self.present(AddNewVC(), animated: true)
+            return false
+        }
+        return true
+    }
 }
