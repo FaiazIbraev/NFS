@@ -12,7 +12,7 @@ enum LabelType{
     case balanceNameLabel
     case balanceAmountLabel
     case organizationLabel
-    case bankLabel
+    case walletLabel
     case dateLabel
     case newRecordLabel
     case recordNameLabel
@@ -33,7 +33,7 @@ extension LabelType{
             return UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 1)
         case .organizationLabel:
             return UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 1)
-        case .bankLabel:
+        case .walletLabel:
             return UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 1)
         case .newRecordLabel:
             return UIColor(red: 0, green: 0, blue: 0, alpha: 1)
@@ -62,7 +62,7 @@ extension LabelType{
             return .systemFont(ofSize: 18, weight: .bold)
         case .organizationLabel:
             return .systemFont(ofSize: 16, weight: .semibold)
-        case .bankLabel:
+        case .walletLabel:
             return .systemFont(ofSize: 14, weight: .semibold)
         case .newRecordLabel:
             return .systemFont(ofSize: 17, weight: .semibold)
@@ -91,7 +91,7 @@ extension LabelType{
             return 0
         case .organizationLabel:
             return 0
-        case .bankLabel:
+        case .walletLabel:
             return 0
         case .dateLabel:
             return 0

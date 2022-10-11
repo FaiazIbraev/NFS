@@ -13,6 +13,11 @@ class AddNewVC: BaseVC{
     private lazy var rejectLabel: CustomLabel = {
         let label = CustomLabel(type: .rejectLabel)
         label.text = "Отмена"
+        
+        let labelTapped = UITapGestureRecognizer(target: self, action: #selector(rejectTapped))
+        label.isUserInteractionEnabled = true
+        label.addGestureRecognizer(labelTapped)
+        
         return label
     }()
     
@@ -90,4 +95,11 @@ class AddNewVC: BaseVC{
     
     
     
+}
+
+
+extension AddNewVC{
+    @objc func rejectTapped(){
+        self.dismiss(animated: true)
+    }
 }

@@ -17,6 +17,7 @@
 		B4151D2128EC47C300A30FA4 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2028EC47C300A30FA4 /* UsersVC.swift */; };
 		B4151D2328EC47D300A30FA4 /* AnalyticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */; };
 		B4151D2528EC49A100A30FA4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2428EC49A100A30FA4 /* MainTabBarController.swift */; };
+		B466BA6728F52CF5003F7281 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466BA6628F52CF5003F7281 /* MainCell.swift */; };
 		B4A4B5C028F16DDE009C1842 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4B5BF28F16DDE009C1842 /* CustomButton.swift */; };
 		B4A4B5C228F16DEE009C1842 /* CustomButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4B5C128F16DEE009C1842 /* CustomButtonType.swift */; };
 		B4AF7C2828EC1DE2008B8CA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4AF7C2728EC1DE2008B8CA4 /* AppDelegate.swift */; };
@@ -44,6 +45,7 @@
 		B4151D2028EC47C300A30FA4 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsVC.swift; sourceTree = "<group>"; };
 		B4151D2428EC49A100A30FA4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B466BA6628F52CF5003F7281 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		B4A4B5BF28F16DDE009C1842 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B4A4B5C128F16DEE009C1842 /* CustomButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonType.swift; sourceTree = "<group>"; };
 		B4AF7C2428EC1DE2008B8CA4 /* neo_finance_system.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = neo_finance_system.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		B466BA6828F52FC7003F7281 /* Main Part */ = {
+			isa = PBXGroup;
+			children = (
+				B4151D1128EC3D5300A30FA4 /* MainVC.swift */,
+				B466BA6628F52CF5003F7281 /* MainCell.swift */,
+			);
+			path = "Main Part";
+			sourceTree = "<group>";
+		};
 		B4AF7C1B28EC1DE2008B8CA4 = {
 			isa = PBXGroup;
 			children = (
@@ -126,9 +137,9 @@
 				B4CE67BB28F14F0B00003E98 /* Custom views */,
 				B4151D1628EC442A00A30FA4 /* Extensions */,
 				B4151D1528EC410800A30FA4 /* Login part */,
-				B4151D1128EC3D5300A30FA4 /* MainVC.swift */,
-				B4151D1C28EC47A600A30FA4 /* SettingsVC.swift */,
+				B466BA6828F52FC7003F7281 /* Main Part */,
 				B4151D1E28EC47B500A30FA4 /* AddNewVC.swift */,
+				B4151D1C28EC47A600A30FA4 /* SettingsVC.swift */,
 				B4151D2028EC47C300A30FA4 /* UsersVC.swift */,
 				B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */,
 				B4151D2428EC49A100A30FA4 /* MainTabBarController.swift */,
@@ -328,6 +339,7 @@
 				B4AF7C3F28EC27E9008B8CA4 /* LoginVC.swift in Sources */,
 				B4CE67BD28F14F3700003E98 /* CustomLabel.swift in Sources */,
 				B4151D2128EC47C300A30FA4 /* UsersVC.swift in Sources */,
+				B466BA6728F52CF5003F7281 /* MainCell.swift in Sources */,
 				B4151D2328EC47D300A30FA4 /* AnalyticsVC.swift in Sources */,
 				B4151D1828EC444700A30FA4 /* VC.swift in Sources */,
 				B4A4B5C228F16DEE009C1842 /* CustomButtonType.swift in Sources */,

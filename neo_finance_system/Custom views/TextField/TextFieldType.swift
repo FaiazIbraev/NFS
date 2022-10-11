@@ -14,7 +14,7 @@ enum TextFieldType{
     case category
     case organization
     case poject
-    case bank
+    case wallet
     case comments
     case fromBank
     case toBank
@@ -35,7 +35,7 @@ extension TextFieldType{
             return UIColor(red: 0.773, green: 0.773, blue: 0.78, alpha: 1)
         case .poject:
             return UIColor(red: 0.773, green: 0.773, blue: 0.78, alpha: 1)
-        case .bank:
+        case .wallet:
             return UIColor(red: 0.773, green: 0.773, blue: 0.78, alpha: 1)
         case .comments:
             return UIColor(red: 0.773, green: 0.773, blue: 0.78, alpha: 1)
@@ -60,7 +60,7 @@ extension TextFieldType{
             return .systemFont(ofSize: 17, weight: .regular)
         case .poject:
             return .systemFont(ofSize: 17, weight: .regular)
-        case .bank:
+        case .wallet:
             return .systemFont(ofSize: 17, weight: .regular)
         case .comments:
             return .systemFont(ofSize: 17, weight: .regular)
@@ -85,7 +85,7 @@ extension TextFieldType{
             return "Kontragent"
         case .poject:
             return "Project"
-        case .bank:
+        case .wallet:
             return "Koshelek"
         case .comments:
             return "Kommentarii"
