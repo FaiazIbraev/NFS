@@ -6,8 +6,17 @@
 //
 
 import UIKit
+import SnapKit
 
 class MainCell: UITableViewCell{
+    
+    private lazy var backgroundColorView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .white
+        view.layer.cornerRadius = 6
+        
+        return view
+    }()
     
     private lazy var recordImage: UIImageView = {
         let im = UIImageView()
@@ -52,11 +61,17 @@ class MainCell: UITableViewCell{
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        addSubview(recordImage)
-        addSubview(organizationLabel)
-        addSubview(walletLabel)
-        addSubview(dateLabel)
-        addSubview(amountLabel)
+        addSubview(backgroundColorView)
+        backgroundColorView.addSubview(recordImage)
+        backgroundColorView.addSubview(organizationLabel)
+        backgroundColorView.addSubview(walletLabel)
+        backgroundColorView.addSubview(dateLabel)
+        backgroundColorView.addSubview(amountLabel)
+        
+        backgroundColorView.snp.makeConstraints { make in
+            make.top.leading.trailing.equalToSuperview()
+            make.bottom.equalToSuperview().offset(-8)
+        }
         
         recordImage.snp.makeConstraints { make in
             make.centerY.equalToSuperview()

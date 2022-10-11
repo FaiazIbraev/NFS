@@ -110,7 +110,7 @@ class MainVC: BaseVC{
     private lazy var descripTableView: UITableView = {
         let tv = UITableView()
         tv.register(MainCell.self, forCellReuseIdentifier: "MainCell")
-        tv.backgroundColor = .green
+        tv.backgroundColor = UIColor(red: 0.965, green: 0.965, blue: 0.965, alpha: 1)
         tv.layer.masksToBounds = true
         tv.dataSource = self
         tv.delegate = self
@@ -198,10 +198,14 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! MainCell
-        cell.backgroundColor = .white
+        cell.backgroundColor = UIColor(red: 0.965, green: 0.965, blue: 0.965, alpha: 1)
         
         return cell
     }
     
     
 }
+
+
+
+
