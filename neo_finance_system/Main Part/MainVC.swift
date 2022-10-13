@@ -76,7 +76,6 @@ class MainVC: BaseVC{
     
     private lazy var incomeAmountLabel: CustomLabel = {
         let label = CustomLabel(type: .balanceAmountLabel)
-        label.text = "+5000"
         label.textAlignment = .center
  
         return label
@@ -84,7 +83,6 @@ class MainVC: BaseVC{
     
     private lazy var costAmountLabel: CustomLabel = {
         let label = CustomLabel(type: .balanceAmountLabel)
-        label.text = "-1000"
         label.textAlignment = .center
 
         return label
@@ -92,7 +90,6 @@ class MainVC: BaseVC{
     
     private lazy var balanceAmountLabel: CustomLabel = {
         let label = CustomLabel(type: .balanceAmountLabel)
-        label.text = "+4000"
         label.textAlignment = .center
 
         return label
@@ -119,6 +116,8 @@ class MainVC: BaseVC{
         return tv
     }()
     
+    
+    let networkManager = NetworkManager()
     
     override func setupViews() {
         super.setupViews()
@@ -185,6 +184,17 @@ class MainVC: BaseVC{
     
     override func setupValues() {
         super.setupValues()
+        getTotalBalance()
+    }
+    
+    func getTotalBalance(){
+        networkManager.getTotalBalance(){ (response) in
+            DispatchQueue.main.async {
+                self.incomeAmountLabel.text = "+\(response.profit_sum)"
+                self.costAmountLabel.text = "-\(response.consumption_sum)"
+                self.balanceAmountLabel.text = "\(response.wallets_sum)"
+            }
+        }
     }
     
 }

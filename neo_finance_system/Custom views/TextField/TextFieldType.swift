@@ -74,25 +74,25 @@ extension TextFieldType{
     var placeholder: String{
         switch self {
         case .date:
-            return "data"
+            return "Дата"
         case .amount:
-            return "summa"
+            return "Сумма"
         case .direction:
-            return "direction"
+            return "Направление"
         case .category:
-            return "category"
+            return "Категория"
         case .organization:
-            return "Kontragent"
+            return "Контрагент"
         case .poject:
-            return "Project"
+            return "Проект"
         case .wallet:
-            return "Koshelek"
+            return "Кошелек"
         case .comments:
-            return "Kommentarii"
+            return "Комментарии"
         case .fromBank:
-            return "Otkuda"
+            return "С кошелька"
         case .toBank:
-            return "Kuda"
+            return "На кошелек"
         }
     }
     

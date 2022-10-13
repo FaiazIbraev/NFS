@@ -17,6 +17,10 @@
 		B4151D2128EC47C300A30FA4 /* UsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2028EC47C300A30FA4 /* UsersVC.swift */; };
 		B4151D2328EC47D300A30FA4 /* AnalyticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */; };
 		B4151D2528EC49A100A30FA4 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D2428EC49A100A30FA4 /* MainTabBarController.swift */; };
+		B4293F3A28F8046000260792 /* SegmentedController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4293F3928F8046000260792 /* SegmentedController.swift */; };
+		B4293F3D28F8175900260792 /* URL Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4293F3C28F8175900260792 /* URL Strings.swift */; };
+		B4293F3F28F8180900260792 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4293F3E28F8180900260792 /* NetworkManager.swift */; };
+		B4293F4228F81A5100260792 /* TotalBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4293F4128F81A5100260792 /* TotalBalance.swift */; };
 		B466BA6728F52CF5003F7281 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466BA6628F52CF5003F7281 /* MainCell.swift */; };
 		B4A4B5C028F16DDE009C1842 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4B5BF28F16DDE009C1842 /* CustomButton.swift */; };
 		B4A4B5C228F16DEE009C1842 /* CustomButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4B5C128F16DEE009C1842 /* CustomButtonType.swift */; };
@@ -45,6 +49,10 @@
 		B4151D2028EC47C300A30FA4 /* UsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersVC.swift; sourceTree = "<group>"; };
 		B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsVC.swift; sourceTree = "<group>"; };
 		B4151D2428EC49A100A30FA4 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		B4293F3928F8046000260792 /* SegmentedController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedController.swift; sourceTree = "<group>"; };
+		B4293F3C28F8175900260792 /* URL Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL Strings.swift"; sourceTree = "<group>"; };
+		B4293F3E28F8180900260792 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B4293F4128F81A5100260792 /* TotalBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBalance.swift; sourceTree = "<group>"; };
 		B466BA6628F52CF5003F7281 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		B4A4B5BF28F16DDE009C1842 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B4A4B5C128F16DEE009C1842 /* CustomButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonType.swift; sourceTree = "<group>"; };
@@ -99,6 +107,33 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		B4293F3828F8044200260792 /* Add New part */ = {
+			isa = PBXGroup;
+			children = (
+				B4151D1E28EC47B500A30FA4 /* AddNewVC.swift */,
+				B4293F3928F8046000260792 /* SegmentedController.swift */,
+			);
+			path = "Add New part";
+			sourceTree = "<group>";
+		};
+		B4293F3B28F8172600260792 /* Network Service */ = {
+			isa = PBXGroup;
+			children = (
+				B4293F4028F81A3D00260792 /* Models */,
+				B4293F3C28F8175900260792 /* URL Strings.swift */,
+				B4293F3E28F8180900260792 /* NetworkManager.swift */,
+			);
+			path = "Network Service";
+			sourceTree = "<group>";
+		};
+		B4293F4028F81A3D00260792 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4293F4128F81A5100260792 /* TotalBalance.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		B466BA6828F52FC7003F7281 /* Main Part */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,10 +170,11 @@
 				B4AF7C3528EC1DE6008B8CA4 /* Info.plist */,
 				B4AF7C3C28EC21EC008B8CA4 /* BaseVC.swift */,
 				B4CE67BB28F14F0B00003E98 /* Custom views */,
+				B4293F3B28F8172600260792 /* Network Service */,
 				B4151D1628EC442A00A30FA4 /* Extensions */,
 				B4151D1528EC410800A30FA4 /* Login part */,
 				B466BA6828F52FC7003F7281 /* Main Part */,
-				B4151D1E28EC47B500A30FA4 /* AddNewVC.swift */,
+				B4293F3828F8044200260792 /* Add New part */,
 				B4151D1C28EC47A600A30FA4 /* SettingsVC.swift */,
 				B4151D2028EC47C300A30FA4 /* UsersVC.swift */,
 				B4151D2228EC47D300A30FA4 /* AnalyticsVC.swift */,
@@ -330,13 +366,17 @@
 				B4A4B5C028F16DDE009C1842 /* CustomButton.swift in Sources */,
 				B4AF7C2828EC1DE2008B8CA4 /* AppDelegate.swift in Sources */,
 				B4151D1B28EC472D00A30FA4 /* VCtype.swift in Sources */,
+				B4293F3A28F8046000260792 /* SegmentedController.swift in Sources */,
 				B4151D1428EC3F9700A30FA4 /* LoginViewModel.swift in Sources */,
+				B4293F3D28F8175900260792 /* URL Strings.swift in Sources */,
 				B4151D1F28EC47B500A30FA4 /* AddNewVC.swift in Sources */,
 				B4AF7C2A28EC1DE2008B8CA4 /* SceneDelegate.swift in Sources */,
 				B4CE67BF28F1517D00003E98 /* LabelType.swift in Sources */,
 				B4AF7C3D28EC21EC008B8CA4 /* BaseVC.swift in Sources */,
 				B4151D2528EC49A100A30FA4 /* MainTabBarController.swift in Sources */,
+				B4293F3F28F8180900260792 /* NetworkManager.swift in Sources */,
 				B4AF7C3F28EC27E9008B8CA4 /* LoginVC.swift in Sources */,
+				B4293F4228F81A5100260792 /* TotalBalance.swift in Sources */,
 				B4CE67BD28F14F3700003E98 /* CustomLabel.swift in Sources */,
 				B4151D2128EC47C300A30FA4 /* UsersVC.swift in Sources */,
 				B466BA6728F52CF5003F7281 /* MainCell.swift in Sources */,
