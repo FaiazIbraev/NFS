@@ -13,8 +13,11 @@ class BaseAPI <T: TargerType> {
         let method = Alamofire.HTTPMethod(rawValue: target.method.rawValue)
         let header = Alamofire.HTTPHeaders(target.headers ?? [:])
         let parameters = buildParameters(task: target.task)
+    
         
         AF.request(target.baseUrl + target.path, method: method, parameters: parameters.0, encoding: parameters.1, headers: header).responseData { (data) in
+            
+            print("Get Data: \(data.response?.statusCode)")
             
             if data.error != nil{
                 onError(.notFound)

@@ -155,7 +155,7 @@ class AddNewVC: BaseVC{
         mainStack.snp.makeConstraints { make in
             make.top.equalTo(segmentController.snp.bottom).offset(9)
             make.leading.trailing.equalToSuperview().inset(0)
-            make.bottom.equalToSuperview().inset(200)
+            make.bottom.equalToSuperview().inset(400)
         }
         
         saveButton.snp.makeConstraints { make in
@@ -204,6 +204,7 @@ extension AddNewVC{
         
         mainStack.insertArrangedSubview(fromWalletTF, at: 2)
         mainStack.insertArrangedSubview(toWalletTF, at: 3)
+
     }
     
     private func incomeButton(){
@@ -215,6 +216,7 @@ extension AddNewVC{
         mainStack.insertArrangedSubview(organizationTF, at: 4)
         mainStack.insertArrangedSubview(projectTF, at: 5)
         mainStack.insertArrangedSubview(walletTF, at: 6)
+
     }
 }
 

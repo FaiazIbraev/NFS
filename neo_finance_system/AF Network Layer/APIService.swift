@@ -13,18 +13,18 @@ enum APIService{
     case refreshToken(refreshToken: String)
 }
 
-
+//https://neobis-finance-sistem.herokuapp.com/account/api/token/
 extension APIService: TargerType{
     var baseUrl: String {
-        return "https://neobis-finance-sistem.herokuapp.com"
+        return "https://neobis-finance-sistem.herokuapp.com/"
     }
     
     var path: String {
         switch self {
         case .authorize:
-            return "/account/api/token/"
+            return "account/api/token/"
         case .refreshToken:
-            return "/account/api/token/refresh/"
+            return "account/api/token/refresh/"
         }
     }
     
@@ -44,6 +44,8 @@ extension APIService: TargerType{
         case .authorize(let email, let password):
             let params: [String: Any] = ["email": email,
                                          "password": password]
+            
+            print(" Params: \(params)")
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
         case .refreshToken(let refreshToken):
             let params: [String: Any] = ["refresh": refreshToken]

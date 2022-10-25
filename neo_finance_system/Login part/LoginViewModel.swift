@@ -24,8 +24,10 @@ class LoginViewModel: LoginViewModelProtocol{
     
     func authorizeUser(login: String, password: String){
         
+        
+        
         networkManager.authorize(email: login.lowercased(), password: password) { (response) in
-            print("Response: \(response)")
+            print("VM Resp: \(response)")
             if let accessToken = response.access, let refreshToken = response.refresh{
                 DSGenerator.sharedInstance.setAccessToken(accessToken)
                 DSGenerator.sharedInstance.setRefreshToken(refreshToken)
@@ -34,7 +36,7 @@ class LoginViewModel: LoginViewModelProtocol{
                 self.isUserAuthorized?(false)
             }
         } onError: { (error) in
-            print("Error: \(error)")
+            print("VM Error: \(error)")
             self.isUserAuthorized?(false)
         }
 

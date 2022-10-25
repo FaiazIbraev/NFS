@@ -172,7 +172,7 @@ class LoginVC: BaseVC{
         
         secureIcon.snp.makeConstraints { make in
             make.centerY.equalTo(passTextField.snp.centerY)
-            make.trailing.equalTo(passTextField).inset(5)
+            make.trailing.equalTo(passTextField).inset(15)
             make.size.equalTo(16)
         }
         
@@ -208,6 +208,7 @@ extension LoginVC{
     @objc func loginTapped(){
         guard let login = mailTextField.text, let password = passTextField.text else {return}
         if !login.isEmpty && !password.isEmpty{
+            print("Main Pass: \(password)")
             viewModel.authorizeUser(login: login, password: password)
         }
     }

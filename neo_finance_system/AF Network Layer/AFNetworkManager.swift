@@ -16,7 +16,7 @@ class AFNetworkManager: AFNetworkManagerProtocol{
     let provider = BaseAPI<APIService>()
     
     func authorize(email: String, password: String, onSuccess: @escaping (AuthModel) -> Void, onError: @escaping (APIError) -> Void){
-        provider.getData(target: .authorize(email: email, password: email), response: AuthModel.self) {
+        provider.getData(target: .authorize(email: email, password: password), response: AuthModel.self) {
             (response) in
             onSuccess(response)
             print("Data: \(response)")

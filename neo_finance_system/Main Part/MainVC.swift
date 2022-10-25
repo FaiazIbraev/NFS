@@ -237,12 +237,9 @@ class MainVC: BaseVC{
             if let refreshToken = response.refresh{
                 AFNetworkManager().refreshToken(refreshToken: refreshToken)
             }
-            
+
         } onError: { (error) in
-            
         }
-
-
     }
     
     func getTotalBalance(){

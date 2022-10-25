@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5BC6DD45C00009D8DC4E9710 /* Pods_neo_finance_system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C642D1C1D73474E338615FC /* Pods_neo_finance_system.framework */; };
+		4F5715F2EC9792DF51139A52 /* Pods_neo_finance_system.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D967A2C7620223E32E795DF /* Pods_neo_finance_system.framework */; };
 		B4151D1228EC3D5300A30FA4 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D1128EC3D5300A30FA4 /* MainVC.swift */; };
 		B4151D1428EC3F9700A30FA4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D1328EC3F9700A30FA4 /* LoginViewModel.swift */; };
 		B4151D1828EC444700A30FA4 /* VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4151D1728EC444700A30FA4 /* VC.swift */; };
@@ -37,7 +37,6 @@
 		B4CE67BF28F1517D00003E98 /* LabelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE67BE28F1517D00003E98 /* LabelType.swift */; };
 		B4CE67C328F1678100003E98 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE67C228F1678100003E98 /* CustomTF.swift */; };
 		B4CE67C528F1679200003E98 /* TextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE67C428F1679200003E98 /* TextFieldType.swift */; };
-		B4D2468F2907AD9E00F4B79E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B4D2468E2907AD9E00F4B79E /* Alamofire */; };
 		B4D246912907B1BA00F4B79E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D246902907B1BA00F4B79E /* APIService.swift */; };
 		B4D246932907B41600F4B79E /* AFNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D246922907B41600F4B79E /* AFNetworkManager.swift */; };
 		B4D246962907B52D00F4B79E /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D246952907B52D00F4B79E /* AuthModel.swift */; };
@@ -49,9 +48,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C642D1C1D73474E338615FC /* Pods_neo_finance_system.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_neo_finance_system.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		14425E8619E2B5E3A95E9FD3 /* Pods-neo_finance_system.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neo_finance_system.release.xcconfig"; path = "Target Support Files/Pods-neo_finance_system/Pods-neo_finance_system.release.xcconfig"; sourceTree = "<group>"; };
-		8F362B2BB4F36125951CF13A /* Pods-neo_finance_system.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neo_finance_system.debug.xcconfig"; path = "Target Support Files/Pods-neo_finance_system/Pods-neo_finance_system.debug.xcconfig"; sourceTree = "<group>"; };
+		3FF1968D2908122600360B2F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF196912908126B00360B2F /* Alamofire.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Alamofire.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FF196932908126F00360B2F /* SnapKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SnapKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		44C63366DC5523AC496BFE4A /* Pods-neo_finance_system.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neo_finance_system.debug.xcconfig"; path = "Target Support Files/Pods-neo_finance_system/Pods-neo_finance_system.debug.xcconfig"; sourceTree = "<group>"; };
+		7D967A2C7620223E32E795DF /* Pods_neo_finance_system.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_neo_finance_system.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4151D1128EC3D5300A30FA4 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		B4151D1328EC3F9700A30FA4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		B4151D1728EC444700A30FA4 /* VC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC.swift; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 		B4D2469D2907E02000F4B79E /* DSUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSUserDefaults.swift; sourceTree = "<group>"; };
 		B4D2469F2907EBBC00F4B79E /* RefreshTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenModel.swift; sourceTree = "<group>"; };
 		B4D246A12907F02400F4B79E /* DSGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSGenerator.swift; sourceTree = "<group>"; };
+		E823CB104E8E8A9898583786 /* Pods-neo_finance_system.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neo_finance_system.release.xcconfig"; path = "Target Support Files/Pods-neo_finance_system/Pods-neo_finance_system.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,14 +100,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BC6DD45C00009D8DC4E9710 /* Pods_neo_finance_system.framework in Frameworks */,
-				B4D2468F2907AD9E00F4B79E /* Alamofire in Frameworks */,
+				4F5715F2EC9792DF51139A52 /* Pods_neo_finance_system.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		693081D794EFED60BD7F1BFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44C63366DC5523AC496BFE4A /* Pods-neo_finance_system.debug.xcconfig */,
+				E823CB104E8E8A9898583786 /* Pods-neo_finance_system.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B4151D1528EC410800A30FA4 /* Login part */ = {
 			isa = PBXGroup;
 			children = (
@@ -194,8 +205,8 @@
 			children = (
 				B4AF7C2628EC1DE2008B8CA4 /* neo_finance_system */,
 				B4AF7C2528EC1DE2008B8CA4 /* Products */,
-				FA9FEF57B3D21DF3B3AD7B51 /* Pods */,
 				F7A41109B1A8500C16231EC0 /* Frameworks */,
+				693081D794EFED60BD7F1BFA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -308,18 +319,12 @@
 		F7A41109B1A8500C16231EC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0C642D1C1D73474E338615FC /* Pods_neo_finance_system.framework */,
+				3FF196932908126F00360B2F /* SnapKit.framework */,
+				3FF196912908126B00360B2F /* Alamofire.framework */,
+				3FF1968D2908122600360B2F /* Alamofire.framework */,
+				7D967A2C7620223E32E795DF /* Pods_neo_finance_system.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FA9FEF57B3D21DF3B3AD7B51 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				8F362B2BB4F36125951CF13A /* Pods-neo_finance_system.debug.xcconfig */,
-				14425E8619E2B5E3A95E9FD3 /* Pods-neo_finance_system.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,20 +334,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4AF7C3828EC1DE6008B8CA4 /* Build configuration list for PBXNativeTarget "neo_finance_system" */;
 			buildPhases = (
-				7A908D3CC4C9C57EE69F1F9A /* [CP] Check Pods Manifest.lock */,
+				0D6E597363DB160A3BDDE403 /* [CP] Check Pods Manifest.lock */,
 				B4AF7C2028EC1DE2008B8CA4 /* Sources */,
 				B4AF7C2128EC1DE2008B8CA4 /* Frameworks */,
 				B4AF7C2228EC1DE2008B8CA4 /* Resources */,
-				C05F6C35D99894D171EBA69F /* [CP] Embed Pods Frameworks */,
+				27EAA8FEB1B524876CEB85E6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = neo_finance_system;
-			packageProductDependencies = (
-				B4D2468E2907AD9E00F4B79E /* Alamofire */,
-			);
 			productName = neo_finance_system;
 			productReference = B4AF7C2428EC1DE2008B8CA4 /* neo_finance_system.app */;
 			productType = "com.apple.product-type.application";
@@ -371,9 +373,6 @@
 				Base,
 			);
 			mainGroup = B4AF7C1B28EC1DE2008B8CA4;
-			packageReferences = (
-				B4D2468D2907AD9E00F4B79E /* XCRemoteSwiftPackageReference "Alamofire" */,
-			);
 			productRefGroup = B4AF7C2528EC1DE2008B8CA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -396,7 +395,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7A908D3CC4C9C57EE69F1F9A /* [CP] Check Pods Manifest.lock */ = {
+		0D6E597363DB160A3BDDE403 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,7 +417,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C05F6C35D99894D171EBA69F /* [CP] Embed Pods Frameworks */ = {
+		27EAA8FEB1B524876CEB85E6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -610,7 +609,7 @@
 		};
 		B4AF7C3928EC1DE6008B8CA4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8F362B2BB4F36125951CF13A /* Pods-neo_finance_system.debug.xcconfig */;
+			baseConfigurationReference = 44C63366DC5523AC496BFE4A /* Pods-neo_finance_system.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -639,7 +638,7 @@
 		};
 		B4AF7C3A28EC1DE6008B8CA4 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 14425E8619E2B5E3A95E9FD3 /* Pods-neo_finance_system.release.xcconfig */;
+			baseConfigurationReference = E823CB104E8E8A9898583786 /* Pods-neo_finance_system.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -688,25 +687,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		B4D2468D2907AD9E00F4B79E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.0.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		B4D2468E2907AD9E00F4B79E /* Alamofire */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = B4D2468D2907AD9E00F4B79E /* XCRemoteSwiftPackageReference "Alamofire" */;
-			productName = Alamofire;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4AF7C1C28EC1DE2008B8CA4 /* Project object */;
 }
