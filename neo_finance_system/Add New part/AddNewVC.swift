@@ -32,6 +32,7 @@ class AddNewVC: BaseVC{
         sg.replaceSegments(segments: ["Доход", "Расход", "Перевод"])
         sg.isUserInteractionEnabled = true
         sg.addTarget(self, action: #selector(segmentTapped), for: .valueChanged)
+        sg.selectedSegmentIndex = 0
         
         return sg
     }()
@@ -84,13 +85,13 @@ class AddNewVC: BaseVC{
         return tf
     }()
     
-    private lazy var fromBankTF: CustomTF = {
+    private lazy var fromWalletTF: CustomTF = {
         let tf = CustomTF(type: .fromBank)
         
         return tf
     }()
     
-    private lazy var toBankTF: CustomTF = {
+    private lazy var toWalletTF: CustomTF = {
         let tf = CustomTF(type: .toBank)
         
         return tf
@@ -183,12 +184,37 @@ extension AddNewVC{
         switch segmentController.selectedSegmentIndex{
         case 0:
             print("0")
+            incomeButton()
         case 1:
             print("1")
+            incomeButton()
         case 2:
             print("2")
+            transferButton()
         default: print("Default")
         }
+    }
+    
+    private func transferButton(){
+        directionTF.removeFromSuperview()
+        categoryTF.removeFromSuperview()
+        organizationTF.removeFromSuperview()
+        projectTF.removeFromSuperview()
+        walletTF.removeFromSuperview()
+        
+        mainStack.insertArrangedSubview(fromWalletTF, at: 2)
+        mainStack.insertArrangedSubview(toWalletTF, at: 3)
+    }
+    
+    private func incomeButton(){
+        fromWalletTF.removeFromSuperview()
+        toWalletTF.removeFromSuperview()
+        
+        mainStack.insertArrangedSubview(directionTF, at: 2)
+        mainStack.insertArrangedSubview(categoryTF, at: 3)
+        mainStack.insertArrangedSubview(organizationTF, at: 4)
+        mainStack.insertArrangedSubview(projectTF, at: 5)
+        mainStack.insertArrangedSubview(walletTF, at: 6)
     }
 }
 

@@ -27,6 +27,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             loginApp()
         }
             
+//        let user = false
+//        if user == false{
+//            mainApp()
+//        } else{
+//            loginApp()
+//        }
         
         return true
     }

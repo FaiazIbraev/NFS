@@ -60,6 +60,7 @@ class MainVC: BaseVC{
         let bt = UIButton()
         bt.setImage(UIImage.init(systemName: "return"), for: .normal)
         bt.tintColor = .black
+        bt.addTarget(self, action: #selector(quitButtonTapped), for: .touchUpInside)
         
         return bt
     }()
@@ -270,7 +271,14 @@ extension MainVC: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
-    
+}
+
+extension MainVC{
+    @objc func quitButtonTapped(){
+        print("Quit tap")
+        DSGenerator.sharedInstance.removeAll()
+        self.appDelegate.loginApp()
+    }
 }
 
 
