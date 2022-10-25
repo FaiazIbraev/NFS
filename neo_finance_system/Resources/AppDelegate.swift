@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     var navigController: UINavigationController?
 
+
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         let window = UIWindow(frame: UIScreen.main.bounds)
@@ -20,12 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window.makeKeyAndVisible()
         
-        if let user = UserDefaults.standard.string(forKey: "login"){
-            if user.isEmpty{
-                loginApp()
-            }else{
-                mainApp()
-            }
+        if (DSGenerator.sharedInstance.getAccessToken()) != nil{
+            mainApp()
         } else{
             loginApp()
         }

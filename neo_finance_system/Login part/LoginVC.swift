@@ -10,7 +10,6 @@ import SnapKit
 
 class LoginVC: BaseVC{
     
-    var viewModel = LoginViewModel()
     
     private lazy var mainImage: UIImageView = {
         let image = UIImageView()
@@ -115,6 +114,15 @@ class LoginVC: BaseVC{
         super.viewDidLoad()
     }
     
+    var viewModel : LoginViewModelProtocol
+    init(viewModel: LoginViewModelProtocol = LoginViewModel()){
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     
     override func setupViews() {

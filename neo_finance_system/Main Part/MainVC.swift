@@ -9,7 +9,52 @@ import Foundation
 import SnapKit
 import UIKit
 
+
 class MainVC: BaseVC{
+    
+    private lazy var blackLineView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .black
+        view.snp.makeConstraints { make in
+            make.height.equalTo(30)
+            make.width.equalTo(1)
+        }
+        
+        return view
+    }()
+    
+    private lazy var blackLineView1: UIView = {
+        let view = UIView()
+        view.backgroundColor = .black
+        view.snp.makeConstraints { make in
+            make.height.equalTo(30)
+            make.width.equalTo(1)
+        }
+        
+        return view
+    }()
+    
+    private lazy var blackLineView2: UIView = {
+        let view = UIView()
+        view.backgroundColor = .black
+        view.snp.makeConstraints { make in
+            make.height.equalTo(30)
+            make.width.equalTo(1)
+        }
+        
+        return view
+    }()
+    
+    private lazy var blackLineView3: UIView = {
+        let view = UIView()
+        view.backgroundColor = .black
+        view.snp.makeConstraints { make in
+            make.height.equalTo(30)
+            make.width.equalTo(1)
+        }
+        
+        return view
+    }()
     
     private lazy var logoutButton: UIButton = {
         let bt = UIButton()
@@ -36,6 +81,7 @@ class MainVC: BaseVC{
         let stack = UIStackView()
         stack.axis = .horizontal
         stack.backgroundColor = .white
+        stack.spacing = 1
         stack.alignment = .bottom
         
         return stack
@@ -45,7 +91,7 @@ class MainVC: BaseVC{
         let stack = UIStackView()
         stack.axis = .horizontal
         stack.backgroundColor = .white
-        stack.distribution = .fillEqually
+        stack.spacing = 1
         stack.alignment = .top
         return stack
     }()
@@ -95,7 +141,7 @@ class MainVC: BaseVC{
         return label
     }()
     
-    private lazy var lastRecords: UILabel = {
+    private lazy var lastRecordsLabel: UILabel = {
         let label = UILabel()
         label.text = "Последние записи"
         label.textColor = UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 1)
@@ -128,9 +174,9 @@ class MainVC: BaseVC{
         view.addSubview(mainLabel)
         view.addSubview(mainStack)
         view.addSubview(secMainStack)
-        view.addSubview(lastRecords)
-        [incomeLabel, costLabel, balanceLabel].forEach{mainStack.addArrangedSubview($0)}
-        [incomeAmountLabel, costAmountLabel, balanceAmountLabel].forEach{secMainStack.addArrangedSubview($0)}
+        view.addSubview(lastRecordsLabel)
+        [incomeLabel, blackLineView, costLabel,blackLineView1, balanceLabel].forEach{mainStack.addArrangedSubview($0)}
+        [incomeAmountLabel, blackLineView2, costAmountLabel, blackLineView3, balanceAmountLabel].forEach{secMainStack.addArrangedSubview($0)}
         
         view.addSubview(descripTableView)
         
@@ -169,13 +215,13 @@ class MainVC: BaseVC{
             make.height.equalTo(45)
         }
         
-        lastRecords.snp.makeConstraints { make in
+        lastRecordsLabel.snp.makeConstraints { make in
             make.top.equalTo(secMainStack.snp.bottom).offset(18.5)
             make.leading.equalToSuperview().offset(16)
         }
         
         descripTableView.snp.makeConstraints { make in
-            make.top.equalTo(lastRecords.snp.bottom).offset(12.5)
+            make.top.equalTo(lastRecordsLabel.snp.bottom).offset(12.5)
             make.leading.trailing.equalToSuperview().inset(16)
             make.bottom.equalTo(view.safeAreaLayoutGuide.snp.bottom).inset(13)
         }
@@ -185,6 +231,17 @@ class MainVC: BaseVC{
     override func setupValues() {
         super.setupValues()
         getTotalBalance()
+        
+        AFNetworkManager().authorize(email: "admin@mail.com", password: "password") { (response) in
+            if let refreshToken = response.refresh{
+                AFNetworkManager().refreshToken(refreshToken: refreshToken)
+            }
+            
+        } onError: { (error) in
+            
+        }
+
+
     }
     
     func getTotalBalance(){

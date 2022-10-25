@@ -47,30 +47,30 @@ enum VCtype{
     var selectedIcon: UIImage{
         switch self {
         case .main:
-            return UIImage(named: "main")!.withTintColor(UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 1))
+            return UIImage(named: "main")!
         case .settings:
-            return UIImage(named: "setting")!.withTintColor(UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 1))
+            return UIImage(named: "setting")!
         case .addNew:
-            return UIImage(named: "add")!.withTintColor(UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 1))
+            return UIImage(named: "add")!
         case .users:
-            return UIImage(named: "users")!.withTintColor(UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 1))
+            return UIImage(named: "users")!
         case .analytics:
-            return UIImage(named: "analysis")!.withTintColor(UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 1))
+            return UIImage(named: "analysis")!
         }
     }
     
     var unselectedIcon: UIImage{
         switch self {
         case .main:
-            return UIImage(named: "main")!.withTintColor(UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 0.6))
+            return UIImage(named: "main")!
         case .settings:
-            return UIImage(named: "setting")!.withTintColor(UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 0.6))
+            return UIImage(named: "setting")!
         case .addNew:
-            return UIImage(named: "add")!.withTintColor(UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 0.6))
+            return UIImage(named: "add")!
         case .users:
-            return UIImage(named: "users")!.withTintColor(UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 0.6))
+            return UIImage(named: "users")!
         case .analytics:
-            return UIImage(named: "analysis")!.withTintColor(UIColor(red: 0.231, green: 0.239, blue: 0.31, alpha: 0.6))
+            return UIImage(named: "analysis")!
         }
     }
     

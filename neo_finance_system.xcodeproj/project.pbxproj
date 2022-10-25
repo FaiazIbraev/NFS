@@ -21,6 +21,9 @@
 		B4293F3D28F8175900260792 /* URL Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4293F3C28F8175900260792 /* URL Strings.swift */; };
 		B4293F3F28F8180900260792 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4293F3E28F8180900260792 /* NetworkManager.swift */; };
 		B4293F4228F81A5100260792 /* TotalBalance.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4293F4128F81A5100260792 /* TotalBalance.swift */; };
+		B44BD6172907A21400385879 /* TargerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BD6162907A21400385879 /* TargerType.swift */; };
+		B44BD6192907A2AB00385879 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BD6182907A2AB00385879 /* Task.swift */; };
+		B44BD61B2907A3C500385879 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = B44BD61A2907A3C500385879 /* BaseAPI.swift */; };
 		B466BA6728F52CF5003F7281 /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B466BA6628F52CF5003F7281 /* MainCell.swift */; };
 		B4A4B5C028F16DDE009C1842 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4B5BF28F16DDE009C1842 /* CustomButton.swift */; };
 		B4A4B5C228F16DEE009C1842 /* CustomButtonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A4B5C128F16DEE009C1842 /* CustomButtonType.swift */; };
@@ -34,6 +37,15 @@
 		B4CE67BF28F1517D00003E98 /* LabelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE67BE28F1517D00003E98 /* LabelType.swift */; };
 		B4CE67C328F1678100003E98 /* CustomTF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE67C228F1678100003E98 /* CustomTF.swift */; };
 		B4CE67C528F1679200003E98 /* TextFieldType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4CE67C428F1679200003E98 /* TextFieldType.swift */; };
+		B4D2468F2907AD9E00F4B79E /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = B4D2468E2907AD9E00F4B79E /* Alamofire */; };
+		B4D246912907B1BA00F4B79E /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D246902907B1BA00F4B79E /* APIService.swift */; };
+		B4D246932907B41600F4B79E /* AFNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D246922907B41600F4B79E /* AFNetworkManager.swift */; };
+		B4D246962907B52D00F4B79E /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D246952907B52D00F4B79E /* AuthModel.swift */; };
+		B4D246982907B7C600F4B79E /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D246972907B7C600F4B79E /* APIError.swift */; };
+		B4D2469C2907DE9600F4B79E /* UserDefaultsDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2469B2907DE9600F4B79E /* UserDefaultsDataStore.swift */; };
+		B4D2469E2907E02000F4B79E /* DSUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2469D2907E02000F4B79E /* DSUserDefaults.swift */; };
+		B4D246A02907EBBC00F4B79E /* RefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2469F2907EBBC00F4B79E /* RefreshTokenModel.swift */; };
+		B4D246A22907F02400F4B79E /* DSGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D246A12907F02400F4B79E /* DSGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +65,9 @@
 		B4293F3C28F8175900260792 /* URL Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL Strings.swift"; sourceTree = "<group>"; };
 		B4293F3E28F8180900260792 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B4293F4128F81A5100260792 /* TotalBalance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalBalance.swift; sourceTree = "<group>"; };
+		B44BD6162907A21400385879 /* TargerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargerType.swift; sourceTree = "<group>"; };
+		B44BD6182907A2AB00385879 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		B44BD61A2907A3C500385879 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
 		B466BA6628F52CF5003F7281 /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
 		B4A4B5BF28F16DDE009C1842 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		B4A4B5C128F16DEE009C1842 /* CustomButtonType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonType.swift; sourceTree = "<group>"; };
@@ -68,6 +83,14 @@
 		B4CE67BE28F1517D00003E98 /* LabelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelType.swift; sourceTree = "<group>"; };
 		B4CE67C228F1678100003E98 /* CustomTF.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTF.swift; sourceTree = "<group>"; };
 		B4CE67C428F1679200003E98 /* TextFieldType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldType.swift; sourceTree = "<group>"; };
+		B4D246902907B1BA00F4B79E /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		B4D246922907B41600F4B79E /* AFNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AFNetworkManager.swift; sourceTree = "<group>"; };
+		B4D246952907B52D00F4B79E /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		B4D246972907B7C600F4B79E /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		B4D2469B2907DE9600F4B79E /* UserDefaultsDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsDataStore.swift; sourceTree = "<group>"; };
+		B4D2469D2907E02000F4B79E /* DSUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSUserDefaults.swift; sourceTree = "<group>"; };
+		B4D2469F2907EBBC00F4B79E /* RefreshTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenModel.swift; sourceTree = "<group>"; };
+		B4D246A12907F02400F4B79E /* DSGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BC6DD45C00009D8DC4E9710 /* Pods_neo_finance_system.framework in Frameworks */,
+				B4D2468F2907AD9E00F4B79E /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +158,28 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		B44BD6142907A1B200385879 /* AF Network Layer */ = {
+			isa = PBXGroup;
+			children = (
+				B4D246942907B51500F4B79E /* Model */,
+				B44BD6152907A1FE00385879 /* Base */,
+				B4D246902907B1BA00F4B79E /* APIService.swift */,
+				B4D246922907B41600F4B79E /* AFNetworkManager.swift */,
+			);
+			path = "AF Network Layer";
+			sourceTree = "<group>";
+		};
+		B44BD6152907A1FE00385879 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				B44BD6162907A21400385879 /* TargerType.swift */,
+				B44BD6182907A2AB00385879 /* Task.swift */,
+				B44BD61A2907A3C500385879 /* BaseAPI.swift */,
+				B4D246972907B7C600F4B79E /* APIError.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		B466BA6828F52FC7003F7281 /* Main Part */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +210,8 @@
 		B4AF7C2628EC1DE2008B8CA4 /* neo_finance_system */ = {
 			isa = PBXGroup;
 			children = (
+				B4D246992907DE1400F4B79E /* Data Store */,
+				B44BD6142907A1B200385879 /* AF Network Layer */,
 				B4AF7C3B28EC1E5D008B8CA4 /* Resources */,
 				B4AF7C2928EC1DE2008B8CA4 /* SceneDelegate.swift */,
 				B4AF7C3228EC1DE6008B8CA4 /* LaunchScreen.storyboard */,
@@ -230,6 +278,33 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		B4D246942907B51500F4B79E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B4D246952907B52D00F4B79E /* AuthModel.swift */,
+				B4D2469F2907EBBC00F4B79E /* RefreshTokenModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B4D246992907DE1400F4B79E /* Data Store */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2469A2907DE6C00F4B79E /* UserDefaults */,
+			);
+			path = "Data Store";
+			sourceTree = "<group>";
+		};
+		B4D2469A2907DE6C00F4B79E /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				B4D2469B2907DE9600F4B79E /* UserDefaultsDataStore.swift */,
+				B4D2469D2907E02000F4B79E /* DSUserDefaults.swift */,
+				B4D246A12907F02400F4B79E /* DSGenerator.swift */,
+			);
+			path = UserDefaults;
+			sourceTree = "<group>";
+		};
 		F7A41109B1A8500C16231EC0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +340,9 @@
 			dependencies = (
 			);
 			name = neo_finance_system;
+			packageProductDependencies = (
+				B4D2468E2907AD9E00F4B79E /* Alamofire */,
+			);
 			productName = neo_finance_system;
 			productReference = B4AF7C2428EC1DE2008B8CA4 /* neo_finance_system.app */;
 			productType = "com.apple.product-type.application";
@@ -293,6 +371,9 @@
 				Base,
 			);
 			mainGroup = B4AF7C1B28EC1DE2008B8CA4;
+			packageReferences = (
+				B4D2468D2907AD9E00F4B79E /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = B4AF7C2528EC1DE2008B8CA4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -361,30 +442,41 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4D246932907B41600F4B79E /* AFNetworkManager.swift in Sources */,
 				B4CE67C528F1679200003E98 /* TextFieldType.swift in Sources */,
 				B4151D1228EC3D5300A30FA4 /* MainVC.swift in Sources */,
 				B4A4B5C028F16DDE009C1842 /* CustomButton.swift in Sources */,
 				B4AF7C2828EC1DE2008B8CA4 /* AppDelegate.swift in Sources */,
+				B4D2469E2907E02000F4B79E /* DSUserDefaults.swift in Sources */,
 				B4151D1B28EC472D00A30FA4 /* VCtype.swift in Sources */,
 				B4293F3A28F8046000260792 /* SegmentedController.swift in Sources */,
 				B4151D1428EC3F9700A30FA4 /* LoginViewModel.swift in Sources */,
+				B4D246A02907EBBC00F4B79E /* RefreshTokenModel.swift in Sources */,
+				B4D246A22907F02400F4B79E /* DSGenerator.swift in Sources */,
 				B4293F3D28F8175900260792 /* URL Strings.swift in Sources */,
+				B44BD6192907A2AB00385879 /* Task.swift in Sources */,
+				B4D246982907B7C600F4B79E /* APIError.swift in Sources */,
 				B4151D1F28EC47B500A30FA4 /* AddNewVC.swift in Sources */,
 				B4AF7C2A28EC1DE2008B8CA4 /* SceneDelegate.swift in Sources */,
 				B4CE67BF28F1517D00003E98 /* LabelType.swift in Sources */,
 				B4AF7C3D28EC21EC008B8CA4 /* BaseVC.swift in Sources */,
+				B44BD6172907A21400385879 /* TargerType.swift in Sources */,
 				B4151D2528EC49A100A30FA4 /* MainTabBarController.swift in Sources */,
 				B4293F3F28F8180900260792 /* NetworkManager.swift in Sources */,
 				B4AF7C3F28EC27E9008B8CA4 /* LoginVC.swift in Sources */,
 				B4293F4228F81A5100260792 /* TotalBalance.swift in Sources */,
+				B4D2469C2907DE9600F4B79E /* UserDefaultsDataStore.swift in Sources */,
 				B4CE67BD28F14F3700003E98 /* CustomLabel.swift in Sources */,
 				B4151D2128EC47C300A30FA4 /* UsersVC.swift in Sources */,
 				B466BA6728F52CF5003F7281 /* MainCell.swift in Sources */,
+				B44BD61B2907A3C500385879 /* BaseAPI.swift in Sources */,
+				B4D246912907B1BA00F4B79E /* APIService.swift in Sources */,
 				B4151D2328EC47D300A30FA4 /* AnalyticsVC.swift in Sources */,
 				B4151D1828EC444700A30FA4 /* VC.swift in Sources */,
 				B4A4B5C228F16DEE009C1842 /* CustomButtonType.swift in Sources */,
 				B4CE67C328F1678100003E98 /* CustomTF.swift in Sources */,
 				B4151D1D28EC47A600A30FA4 /* SettingsVC.swift in Sources */,
+				B4D246962907B52D00F4B79E /* AuthModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +688,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B4D2468D2907AD9E00F4B79E /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B4D2468E2907AD9E00F4B79E /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B4D2468D2907AD9E00F4B79E /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B4AF7C1C28EC1DE2008B8CA4 /* Project object */;
 }
