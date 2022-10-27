@@ -11,6 +11,7 @@ import Alamofire
 enum APIService{
     case authorize (email: String, password: String)
     case refreshToken(refreshToken: String)
+    case getLastTransactions
 }
 
 //https://neobis-finance-sistem.herokuapp.com/account/api/token/
@@ -25,6 +26,8 @@ extension APIService: TargerType{
             return "account/api/token/"
         case .refreshToken:
             return "account/api/token/refresh/"
+        case .getLastTransactions:
+            return "transaction/"
         }
     }
     
@@ -50,11 +53,19 @@ extension APIService: TargerType{
         case .refreshToken(let refreshToken):
             let params: [String: Any] = ["refresh": refreshToken]
             return .requestParameters(parameters: params, encoding: URLEncoding.default)
+        default:
+            return .requestPlain
         }
     }
     
     var headers: [String : String]? {
         switch self {
+        case .getLastTransactions:
+            var params = [String:String]()
+            if let accessToken = DSGenerator.sharedInstance.getAccessToken(){
+                params["Authorization"] = "Bearer\(accessToken)"
+            }
+            return params
         default:
             return nil
         }

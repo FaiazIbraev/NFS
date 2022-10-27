@@ -232,15 +232,10 @@ class MainVC: BaseVC{
     override func setupValues() {
         super.setupValues()
         getTotalBalance()
-        
-        AFNetworkManager().authorize(email: "admin@mail.com", password: "password") { (response) in
-            if let refreshToken = response.refresh{
-                AFNetworkManager().refreshToken(refreshToken: refreshToken)
-            }
-
-        } onError: { (error) in
-        }
+        AFNetworkManager().getLastTransactions()
     }
+    
+    
     
     func getTotalBalance(){
         networkManager.getTotalBalance(){ (response) in

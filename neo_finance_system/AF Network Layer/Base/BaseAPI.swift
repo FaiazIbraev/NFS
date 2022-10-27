@@ -17,11 +17,11 @@ class BaseAPI <T: TargerType> {
         
         AF.request(target.baseUrl + target.path, method: method, parameters: parameters.0, encoding: parameters.1, headers: header).responseData { (data) in
             
-            print("Get Data: \(data.response?.statusCode)")
-            
             if data.error != nil{
                 onError(.notFound)
             }
+            
+            print("Response BaseAPI: \(data.response)")
             
             if let statusCode = data.response?.statusCode{
                 self.handleStatusCode(statusCode: statusCode) { (error) in

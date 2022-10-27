@@ -186,6 +186,18 @@ class LoginVC: BaseVC{
     
     override func setupValues() {
         super.setupValues()
+        
+        if let login = mailTextField.text, let password = passTextField.text{
+            AFNetworkManager().authorize(email: login, password: password) { (response) in
+                if let refreshToken = response.refresh{
+                    AFNetworkManager().refreshToken(refreshToken: refreshToken)
+                }
+            } onError: { (error) in
+            }
+        }
+        
+
+        
         viewModel.isUserAuthorized = {
             (isAuthorized) in
             if isAuthorized{
@@ -214,6 +226,9 @@ extension LoginVC{
     }
     
 }
+
+
+
 
 extension LoginVC: UITextFieldDelegate{
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {

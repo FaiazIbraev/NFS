@@ -32,6 +32,15 @@ class AFNetworkManager: AFNetworkManagerProtocol{
         } onError: { (error) in
             print("Error: \(error)")
         }
+    }
+    
+    func getLastTransactions(){
+        provider.getData(target: .getLastTransactions, response: RefreshTokenModel.self) { (response) in
+            
+        } onError: { (error) in
+            
+        }
+
 
     }
     

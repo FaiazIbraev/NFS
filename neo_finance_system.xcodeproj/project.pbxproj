@@ -45,6 +45,7 @@
 		B4D2469E2907E02000F4B79E /* DSUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2469D2907E02000F4B79E /* DSUserDefaults.swift */; };
 		B4D246A02907EBBC00F4B79E /* RefreshTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D2469F2907EBBC00F4B79E /* RefreshTokenModel.swift */; };
 		B4D246A22907F02400F4B79E /* DSGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D246A12907F02400F4B79E /* DSGenerator.swift */; };
+		B4D246A4290A81D400F4B79E /* GetLastTransactionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4D246A3290A81D400F4B79E /* GetLastTransactionsModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +93,7 @@
 		B4D2469D2907E02000F4B79E /* DSUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSUserDefaults.swift; sourceTree = "<group>"; };
 		B4D2469F2907EBBC00F4B79E /* RefreshTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshTokenModel.swift; sourceTree = "<group>"; };
 		B4D246A12907F02400F4B79E /* DSGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DSGenerator.swift; sourceTree = "<group>"; };
+		B4D246A3290A81D400F4B79E /* GetLastTransactionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetLastTransactionsModel.swift; sourceTree = "<group>"; };
 		E823CB104E8E8A9898583786 /* Pods-neo_finance_system.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neo_finance_system.release.xcconfig"; path = "Target Support Files/Pods-neo_finance_system/Pods-neo_finance_system.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +115,6 @@
 				44C63366DC5523AC496BFE4A /* Pods-neo_finance_system.debug.xcconfig */,
 				E823CB104E8E8A9898583786 /* Pods-neo_finance_system.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,6 +295,7 @@
 			children = (
 				B4D246952907B52D00F4B79E /* AuthModel.swift */,
 				B4D2469F2907EBBC00F4B79E /* RefreshTokenModel.swift */,
+				B4D246A3290A81D400F4B79E /* GetLastTransactionsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -456,6 +458,7 @@
 				B44BD6192907A2AB00385879 /* Task.swift in Sources */,
 				B4D246982907B7C600F4B79E /* APIError.swift in Sources */,
 				B4151D1F28EC47B500A30FA4 /* AddNewVC.swift in Sources */,
+				B4D246A4290A81D400F4B79E /* GetLastTransactionsModel.swift in Sources */,
 				B4AF7C2A28EC1DE2008B8CA4 /* SceneDelegate.swift in Sources */,
 				B4CE67BF28F1517D00003E98 /* LabelType.swift in Sources */,
 				B4AF7C3D28EC21EC008B8CA4 /* BaseVC.swift in Sources */,
