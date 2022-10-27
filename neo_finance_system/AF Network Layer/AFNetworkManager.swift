@@ -34,11 +34,11 @@ class AFNetworkManager: AFNetworkManagerProtocol{
         }
     }
     
-    func getLastTransactions(){
-        provider.getData(target: .getLastTransactions, response: RefreshTokenModel.self) { (response) in
-            
+    func getLastTransactions(onSuccess: @escaping (GetLastTransactionsModel) -> Void, onError: @escaping (APIError) -> Void){
+        provider.getData(target: .getLastTransactions, response: GetLastTransactionsModel.self) { (response) in
+            onSuccess(response)
         } onError: { (error) in
-            
+            print("Error Getting Trans: \(error.locatedError)")
         }
 
 

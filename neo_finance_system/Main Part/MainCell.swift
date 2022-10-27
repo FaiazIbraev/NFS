@@ -25,7 +25,7 @@ class MainCell: UITableViewCell{
         return im
     }()
     
-    private lazy var organizationLabel: CustomLabel = {
+    lazy var organizationLabel: CustomLabel = {
         let label = CustomLabel(type: .organizationLabel)
         label.text = "Breez Pro"
         
@@ -55,7 +55,7 @@ class MainCell: UITableViewCell{
     
     override class func awakeFromNib() {
         super.awakeFromNib()
-        
+     
     }
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -109,4 +109,23 @@ class MainCell: UITableViewCell{
         fatalError("init(coder:) has not been implemented")
     }
     
+    
+    
+    func configText(texts: detailedData){
+        organizationLabel.text = texts.section
+        walletLabel.text = texts.wallet
+        dateLabel.text = texts.date_join
+        amountLabel.text = String("\(texts.sum)")
+        
+        if texts.type == "Расход"{
+            recordImage.image = UIImage(named: "outcome")
+        } else if texts.type == "Перевод" {
+            recordImage.image = UIImage(named: "transfer")
+        }
+    }
+    
+    
+    
 }
+
+

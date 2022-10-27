@@ -23,9 +23,6 @@ class LoginViewModel: LoginViewModelProtocol{
     var isUserAuthorized: ((Bool) -> Void)?
     
     func authorizeUser(login: String, password: String){
-        
-        
-        
         networkManager.authorize(email: login.lowercased(), password: password) { (response) in
             print("VM Resp: \(response)")
             if let accessToken = response.access, let refreshToken = response.refresh{

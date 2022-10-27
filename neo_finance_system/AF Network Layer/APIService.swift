@@ -63,7 +63,7 @@ extension APIService: TargerType{
         case .getLastTransactions:
             var params = [String:String]()
             if let accessToken = DSGenerator.sharedInstance.getAccessToken(){
-                params["Authorization"] = "Bearer\(accessToken)"
+                params["Authorization"] = "Bearer \(accessToken)"
             }
             return params
         default:

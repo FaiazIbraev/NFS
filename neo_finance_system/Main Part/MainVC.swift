@@ -165,6 +165,9 @@ class MainVC: BaseVC{
     
     
     let networkManager = NetworkManager()
+    var lastTransactions : GetLastTransactionsModel?
+    var cellCount = 0
+    var cellText = [Any]()
     
     override func setupViews() {
         super.setupViews()
@@ -232,7 +235,20 @@ class MainVC: BaseVC{
     override func setupValues() {
         super.setupValues()
         getTotalBalance()
-        AFNetworkManager().getLastTransactions()
+        AFNetworkManager().getLastTransactions { (response) in
+            self.cellCount = response.count
+            self.lastTransactions = response
+            
+            DispatchQueue.main.async {
+                self.descripTableView.reloadData()
+                
+            }
+            print("Cell Count: \(self.cellCount)")
+            
+        } onError: { (error) in
+            
+        }
+
     }
     
     
@@ -252,13 +268,18 @@ class MainVC: BaseVC{
 
 extension MainVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return cellCount
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell", for: indexPath) as! MainCell
         cell.backgroundColor = UIColor(red: 0.965, green: 0.965, blue: 0.965, alpha: 1)
+        
+        if let totalTrans = lastTransactions, let detailedResults = totalTrans.results{  // privyazka response k lastTransactions v func setupValues
+            
+            let transaction = detailedResults[indexPath.row]
+            cell.configText(texts: transaction)
+        }
         
         return cell
     }

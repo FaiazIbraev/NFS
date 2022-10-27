@@ -7,6 +7,7 @@
 
 import Foundation
 import Alamofire
+import SwiftyJSON
 
 class BaseAPI <T: TargerType> {
     func getData<M: Codable>(target: T, response: M.Type, onSuccess: @escaping((M)-> Void), onError: @escaping(APIError)->Void){
@@ -30,6 +31,10 @@ class BaseAPI <T: TargerType> {
             }
             
             if let data = data.data{
+                
+                let json = JSON(data)
+                print("JSON: \(json)")
+                
                 self.handleResponseData(result: data) { (data) in
                     onSuccess(data)
                 } onError: { (error) in
