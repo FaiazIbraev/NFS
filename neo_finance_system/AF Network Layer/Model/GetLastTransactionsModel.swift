@@ -20,7 +20,7 @@ struct detailedData: Codable{
     var section: String?
     var category: String?
     var project: String?
-    var sum: Int?
+    var sum: Int
     var wallet: String?
     var wallet_to: String?
     var contractor: String?

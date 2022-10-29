@@ -115,11 +115,13 @@ class MainCell: UITableViewCell{
         organizationLabel.text = texts.section
         walletLabel.text = texts.wallet
         dateLabel.text = texts.date_join
-        amountLabel.text = String("\(texts.sum)")
+        amountLabel.text = String("+\(texts.sum)")
         
         if texts.type == "Расход"{
             recordImage.image = UIImage(named: "outcome")
+            amountLabel.text = String("-\(texts.sum)")
         } else if texts.type == "Перевод" {
+            amountLabel.text = String("\(texts.sum)")
             recordImage.image = UIImage(named: "transfer")
         }
     }
